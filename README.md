@@ -1,5 +1,7 @@
 # docker-bwa
 
+Dockerfile for bwa
+
 ## Build
 
 ```bash
