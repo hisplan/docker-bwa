@@ -1,25 +1,23 @@
 # docker-bwa
 
-Dockerfile for bwa
+Dockerized BWA (Burrow-Wheeler Aligner for short-read alignment)
 
-## Build
-
-```bash
-$ docker build -t hisplan/bwa:latest .
-```
-
-
-## Push
+## How to Run
 
 ```bash
-$ docker login
-$ docker push hisplan/bwa:latest
+docker run -it --rm bwa:0.7.17
 ```
 
-## Pull and Run
+## Build Container Image
 
 ```bash
-$ docker pull hisplan/bwa:latest
-$ docker run --rm -it hisplan/bwa:latest
+./build.sh
 ```
 
+## Push to Docker Registry
+
+Either you can use the `docker push` command or run `push.sh` (requires [SCING](https://github.com/hisplan/scing)):
+
+```bash
+./push.sh
+```
