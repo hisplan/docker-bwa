@@ -15,4 +15,4 @@ RUN cd /tmp && wget https://github.com/lh3/bwa/releases/download/v${TOOL_VERSION
       && make \
       && mv /tmp/bwa-${TOOL_VERSION}/bwa /usr/bin
 
-ENTRYPOINT ["/usr/bin/bwa"]
+# ENTRYPOINT ["/usr/bin/bwa"]
